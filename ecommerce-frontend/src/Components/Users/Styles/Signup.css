@@ -1,0 +1,101 @@
+
+@keyframes signIn {
+    
+    0%{
+      color: black;
+      transform: scale(1.5,1.5);
+    }
+    50%{
+        transform: scale(1.8,1.8);
+    }
+    100%{
+        color: red;
+        transform: scale(2,2);
+    }
+}
+
+@keyframes formfade {
+    
+    0%{
+      opacity: 0;
+      transform: scale(1.5,1.5);
+    }
+    
+    25%{
+        opacity: 0.2;
+    }
+    
+    50%{
+        opacity: 0.5;
+    }
+    
+    75%{
+        opacity: 0.8;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.form-custom{
+    border: 1px solid #89838352;
+    border-radius: 31px 31px 0px 0px;
+    width: 50%;
+    padding: 20px;
+    animation-name: formfade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.container-custom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-custom{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cut{
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.icon-container{
+    text-align: center;
+}
+
+.icon-custom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-container i{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:578px) {
+    
+    .container-custom{
+        display: block;
+    }
+    .form-custom{
+        width: 100%;
+    }
+    .alert-custom{
+        width: 100%;
+    }
+
+}
